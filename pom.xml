@@ -23,10 +23,6 @@
             <id>papermc</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
-        <repository>
-            <id>codemc-releases</id>
-            <url>https://repo.codemc.org/repository/maven-releases/</url>
-        </repository>
     </repositories>
 
     <dependencies>
@@ -65,15 +61,6 @@
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
-        </dependency>
-
-        <!-- PlaceholderAPI (optional - from CodeMC) -->
-        <dependency>
-            <groupId>me.clip</groupId>
-            <artifactId>placeholderapi</artifactId>
-            <version>2.11.5</version>
-            <scope>provided</scope>
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
