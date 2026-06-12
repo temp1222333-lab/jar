@@ -1,0 +1,73 @@
+# CustomArmorTrims Messages
+
+prefix: "§6[ArmorTrims] §r"
+
+# GUI Messages
+gui:
+  main-title: "§6Armor Trims Customization"
+  pattern-title: "§6Select a Pattern"
+  material-title: "§6Select a Material"
+  armor-piece-title: "§6Select Armor Piece"
+  previous-page: "§7Previous Page"
+  next-page: "§7Next Page"
+  back: "§7Back"
+  close: "§7Close"
+
+# Armor Pieces
+armor-pieces:
+  helmet: "§eHelmet"
+  chestplate: "§eChestplate"
+  leggings: "§eLeggings"
+  boots: "§eBoots"
+
+# Patterns
+patterns:
+  sentry: "§bSentry"
+  vex: "§bVex"
+  wild: "§bWild"
+  coast: "§bCoast"
+  dune: "§bDune"
+  wayfinder: "§bWayfinder"
+  shaper: "§bShaper"
+  silence: "§bSilence"
+  ward: "§bWard"
+  tide: "§bTide"
+  raiser: "§bRaiser"
+  host: "§bHost"
+
+# Materials
+materials:
+  iron: "§fIron"
+  gold: "§6Gold"
+  diamond: "§3Diamond"
+  emerald: "§2Emerald"
+  redstone: "§cRedstone"
+  lapis: "§1Lapis"
+  quartz: "§fQuartz"
+  netherite: "§8Netherite"
+  amethyst: "§dAmethyst"
+  copper: "§e§nCopper"
+
+# Command Messages
+commands:
+  trim-selected: "§aYou selected §6{pattern} §awith §6{material}§a!"
+  trim-applied: "§aYour armor trim has been applied!"
+  no-armor-equipped: "§cYou don't have armor equipped!"
+  reload-success: "§aPlugin reloaded successfully!"
+  reload-error: "§cError reloading plugin!"
+  reset-success: "§aYour armor trims have been reset!"
+  reset-error: "§cError resetting your trims!"
+
+# Permissions Messages
+permissions:
+  no-permission: "§cYou don't have permission to use this command!"
+  pattern-locked: "§cThis pattern is locked! You don't have permission."
+  material-locked: "§cThis material is locked! You don't have permission."
+  insufficient-permissions: "§cYou don't have permission to use this trim combination!"
+
+# Info Messages
+info:
+  current-pattern: "§7Current Pattern: §6{pattern}"
+  current-material: "§7Current Material: §6{material}"
+  no-trim-selected: "§7No trim selected"
+  locked-item: "§c§m                §r §cLocked §c§m                §r"

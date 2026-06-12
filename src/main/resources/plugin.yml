@@ -1,0 +1,127 @@
+name: CustomArmorTrims
+version: 1.0.0
+description: A cosmetic armor trim system for Paper/Folia 1.20+
+authors:
+  - CustomPluginDev
+main: com.custom.armortrims.CustomArmorTrims
+api-version: 1.20
+folia-supported: true
+
+commands:
+  armortrims:
+    description: Open the armor trims customization GUI
+    usage: /armortrims
+    permission: armortrims.use
+    aliases:
+      - at
+      - trim
+
+permissions:
+  armortrims.use:
+    description: Allows players to use the armor trims system
+    default: true
+  armortrims.admin:
+    description: Admin access to all armor trims
+    default: op
+  armortrims.reload:
+    description: Allows reloading the plugin
+    default: op
+  armortrims.reset:
+    description: Allows resetting armor trims
+    default: true
+  armortrims.pattern.*:
+    description: Access to all armor trim patterns
+    default: false
+    children:
+      armortrims.pattern.sentry: true
+      armortrims.pattern.vex: true
+      armortrims.pattern.wild: true
+      armortrims.pattern.coast: true
+      armortrims.pattern.dune: true
+      armortrims.pattern.wayfinder: true
+      armortrims.pattern.shaper: true
+      armortrims.pattern.silence: true
+      armortrims.pattern.ward: true
+      armortrims.pattern.tide: true
+      armortrims.pattern.raiser: true
+      armortrims.pattern.host: true
+  armortrims.pattern.sentry:
+    description: Access to Sentry armor trim pattern
+    default: false
+  armortrims.pattern.vex:
+    description: Access to Vex armor trim pattern
+    default: false
+  armortrims.pattern.wild:
+    description: Access to Wild armor trim pattern
+    default: false
+  armortrims.pattern.coast:
+    description: Access to Coast armor trim pattern
+    default: false
+  armortrims.pattern.dune:
+    description: Access to Dune armor trim pattern
+    default: false
+  armortrims.pattern.wayfinder:
+    description: Access to Wayfinder armor trim pattern
+    default: false
+  armortrims.pattern.shaper:
+    description: Access to Shaper armor trim pattern
+    default: false
+  armortrims.pattern.silence:
+    description: Access to Silence armor trim pattern
+    default: false
+  armortrims.pattern.ward:
+    description: Access to Ward armor trim pattern
+    default: false
+  armortrims.pattern.tide:
+    description: Access to Tide armor trim pattern
+    default: false
+  armortrims.pattern.raiser:
+    description: Access to Raiser armor trim pattern
+    default: false
+  armortrims.pattern.host:
+    description: Access to Host armor trim pattern
+    default: false
+  armortrims.material.*:
+    description: Access to all armor trim materials
+    default: false
+    children:
+      armortrims.material.iron: true
+      armortrims.material.gold: true
+      armortrims.material.diamond: true
+      armortrims.material.emerald: true
+      armortrims.material.redstone: true
+      armortrims.material.lapis: true
+      armortrims.material.quartz: true
+      armortrims.material.netherite: true
+      armortrims.material.amethyst: true
+      armortrims.material.copper: true
+  armortrims.material.iron:
+    description: Access to Iron armor trim material
+    default: false
+  armortrims.material.gold:
+    description: Access to Gold armor trim material
+    default: false
+  armortrims.material.diamond:
+    description: Access to Diamond armor trim material
+    default: false
+  armortrims.material.emerald:
+    description: Access to Emerald armor trim material
+    default: false
+  armortrims.material.redstone:
+    description: Access to Redstone armor trim material
+    default: false
+  armortrims.material.lapis:
+    description: Access to Lapis armor trim material
+    default: false
+  armortrims.material.quartz:
+    description: Access to Quartz armor trim material
+    default: false
+  armortrims.material.netherite:
+    description: Access to Netherite armor trim material
+    default: false
+  armortrims.material.amethyst:
+    description: Access to Amethyst armor trim material
+    default: false
+  armortrims.material.copper:
+    description: Access to Copper armor trim material
+    default: false

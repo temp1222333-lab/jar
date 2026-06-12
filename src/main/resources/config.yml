@@ -1,0 +1,56 @@
+# CustomArmorTrims Configuration
+
+# Database Configuration
+database:
+  type: sqlite  # sqlite or mysql
+  sqlite:
+    file: plugins/CustomArmorTrims/data.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: customarmortrims
+    username: root
+    password: password
+    max-pool-size: 10
+    connection-timeout: 30000
+    idle-timeout: 600000
+
+# GUI Configuration
+gui:
+  title: "§6Armor Trims Customization"
+  size: 27  # 9, 18, 27, 36, 45, 54
+  auto-apply: true
+  show-locked-patterns: true
+  show-locked-materials: true
+
+# Messages
+messages:
+  prefix: "§6[ArmorTrims] §r"
+  no-permission: "§cYou don't have permission to use this command!"
+  permission-denied: "§cYou don't have permission to use this trim!"
+  trim-selected: "§aYou selected §6{pattern} §awith §6{material}§a!"
+  trim-applied: "§aYour armor trim has been applied!"
+  no-armor-equipped: "§cYou don't have armor equipped!"
+  reload-success: "§aPlugin reloaded successfully!"
+  reload-error: "§cError reloading plugin!"
+  reset-success: "§aYour armor trims have been reset!"
+
+# Sounds
+sounds:
+  enable: true
+  trim-selected: BLOCK_NOTE_BLOCK_PLING
+  trim-applied: ITEM_ARMOR_EQUIP_GENERIC
+  gui-open: BLOCK_CHEST_OPEN
+
+# Performance
+performance:
+  async-database: true
+  batch-updates: true
+  batch-size: 10
+  cache-player-data: true
+  cache-ttl-minutes: 30
+
+# Placeholder API
+placeholder-api:
+  enabled: true
+  check-interval: 60  # seconds
